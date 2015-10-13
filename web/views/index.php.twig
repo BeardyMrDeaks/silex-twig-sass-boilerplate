@@ -1,10 +1,66 @@
-    {%extends 'layouts/main.php.twig' %}
-    {%block body %}
-    <!-- BODY CONTENT # EXCLUDES NAVBAR -->
-    
-    <p>content - index.php.twig</p>
 
-    {%endblock%}
+
+  {%extends 'layouts/main.php.twig' %}
+  {%block body %}
+    <!-- BODY CONTENT # EXCLUDES NAVBAR -->
+
+    <section>
+
+  
+    <ul class="imgList">
+      <li>
+        <a href="{{ app.request.getbaseurl }}/web/assets/img/numbers-01.jpg">
+          <img src="{{ app.request.getbaseurl }}/web/assets/img/numbers-01.jpg" alt="">
+          <p>Experimentation with color and texture.</p>
+        </a>  
+      </li>
+      <li>
+        <a href="{{ app.request.getbaseurl }}/web/assets/img/numbers-02.jpg">
+          <img src="{{ app.request.getbaseurl }}/web/assets/img/numbers-02.jpg" alt="">
+          <p>Playing with blending modes in photoshop.</p>
+        </a>
+      </li>
+      <li>
+        <a href="{{ app.request.getbaseurl }}/web/assets/img/numbers-06.jpg">
+          <img src="{{ app.request.getbaseurl }}/web/assets/img/numbers-06.jpg" alt="">
+          <p>Trying to create an 80s style of glows.</p>
+        </a>
+      </li>
+      <li>
+        <a href="{{ app.request.getbaseurl }}/web/assets/img/numbers-09.jpg">
+          <img src="{{ app.request.getbaseurl }}/web/assets/img/numbers-09.jpg" alt="">
+          <p>Drips created using photoshop brushes.</p>
+        </a>
+      </li>
+      <li>
+        <a href="{{ app.request.getbaseurl }}/web/assets/img/numbers-12.jpg">
+          <img src="{{ app.request.getbaseurl }}/web/assets/img/numbers-12.jpg" alt="">
+          <p>Creating shapes using repetition.</p>
+        </a>
+      </li>
+    
+    
+    </ul>
+    
+    
+    
+    
+    
+
+
+<!-- page specific scripts -->    
+    <script>
+window.onload = function() {
+  document.getElementById('home').className = 'selected';
+};
+</script>  
+    
+    </section>
+
+  <!-- BODY CONTENT # EXCLUDES FOOTER -->
+{%endblock body%}
+  
+
 
 
 

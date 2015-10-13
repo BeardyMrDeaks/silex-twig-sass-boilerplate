@@ -1,0 +1,33 @@
+/******************
+HEADER STYLING
+******************/
+
+#logo{
+    text-align: center;
+    margin: 0;
+}
+
+
+// GREEN HEADER
+header{
+    background: $customgreen;
+    border-color: $borderhead;
+}
+
+nav{
+    text-align:center;
+    padding: 10px 0;
+    margin: 20px 0 0;
+}
+
+
+// NAV BACKGROUND ON MOBILE DEVICES
+nav {
+    background: $borderhead;
+    a, nav a:visited{
+        color: #fff;
+    }
+    a.selected, a:hover{
+        color: $navselected;
+    }
+}

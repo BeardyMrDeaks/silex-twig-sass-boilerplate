@@ -1,7 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-  <title>Ribbit - A Treehouse Project</title>
+  <meta charset="utf-8"></meta>
+  <title>Sam Deacon | Designer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="{{ app.request.getbaseurl }}/web/assets/css/main.css" rel="stylesheet" media="screen">
 
@@ -9,12 +10,13 @@
 </head>
   <body>
     
-    {%include 'partials/nav.php.twig'%}
+    {%include 'partials/header.php.twig'%}
+  <div id="wrapper">    
     {%block body %}{%endblock%}
+    {%include 'partials/footer.php.twig'%}  
+  </div>
     
-
-    
-    
+  
   
     <script src="{{ app.request.getbaseurl }}/web/assets/js/jquery.js"></script>
   <script src="{{ app.request.getbaseurl }}/web/assets/js/script.js"></script>

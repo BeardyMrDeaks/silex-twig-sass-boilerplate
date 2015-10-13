@@ -1,3 +1,10 @@
-body {
-    background: pink;
-}
+@import
+    '1-tools/normalize',
+    '0-base/vars',
+    'sections/header',
+    'sections/home',
+    'sections/footer'
+
+    ;
+    
+

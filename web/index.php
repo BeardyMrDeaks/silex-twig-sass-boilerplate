@@ -31,4 +31,12 @@ $app->get('/', function() use($app) {
     return $app['twig']->render('index.php.twig');
 });
 
+$app->get('/about', function() use($app) {
+    return $app['twig']->render('about.php.twig');
+});
+
+$app->get('/contact', function() use($app) {
+    return $app['twig']->render('contact.php.twig');
+});
+
 $app->run();

@@ -10,7 +10,7 @@
 3. **SASS (example setup):**
 >   $ gem install sass
 >   $ cd web/assets
->   $ run $ sass --watch scss/:css/
+>   $ sass --watch scss/:css/
 >   * configure sass reference as in http://sass-lang.com/documentation/file.SASS_REFERENCE.html*
 4.  If you have issues loading assets (css etc) you may need to adjust the .htaccess file or move it within your web/ directory
 

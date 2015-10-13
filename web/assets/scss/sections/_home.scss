@@ -1,0 +1,55 @@
+/******************
+HEADING/FONT STYLING
+******************/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+h1{
+  font-family: 'Exo', sans-serif;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: $h2size;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+h1, h2 {
+  color: $whiteprime;
+}
+
+
+
+
+
+
+/******************
+HOMEPAGE STYLING
+******************/
+
+.imgList {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: $customgreen;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+
+body{
+  background-color: $whiteprime;
+  color: darken($greyprime, 15%);
+  
+}
