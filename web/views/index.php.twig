@@ -5,41 +5,32 @@
     <!-- BODY CONTENT # EXCLUDES NAVBAR -->
 
     <section>
+      
+      
+      {% set pictures = {
+    one:    { link: "1holmer.png", desc: "holmer preschool website" },
+    two: { link: "1norton.jpg", desc: "norton daycare website." },
+    three:     { link: "1octocat.png", desc: "github version control!" },
+    four:     { link: "1silex.png", desc: "built with silex framework." },
+    five:     { link: "1steve1.png", desc: "dads portfolio site." },
+    siz:     { link: "1steve2.jpg", desc: "dads wordpress site." }
+} %}
+    
 
-  
-    <ul class="imgList">
+    <ul id="gallery">
+      
+      
+    {% for pic in pictures %}
       <li>
-        <a href="{{ app.request.getbaseurl }}/web/assets/img/numbers-01.jpg">
-          <img src="{{ app.request.getbaseurl }}/web/assets/img/numbers-01.jpg" alt="">
-          <p>Experimentation with color and texture.</p>
+        <a href="{{ app.request.getbaseurl }}/web/assets/img/{{ pic.link }}">
+          <img src="{{ app.request.getbaseurl }}/web/assets/img/{{ pic.link }}" alt="">
+          <p>{{pic.desc}}</p>
         </a>  
-      </li>
-      <li>
-        <a href="{{ app.request.getbaseurl }}/web/assets/img/numbers-02.jpg">
-          <img src="{{ app.request.getbaseurl }}/web/assets/img/numbers-02.jpg" alt="">
-          <p>Playing with blending modes in photoshop.</p>
-        </a>
-      </li>
-      <li>
-        <a href="{{ app.request.getbaseurl }}/web/assets/img/numbers-06.jpg">
-          <img src="{{ app.request.getbaseurl }}/web/assets/img/numbers-06.jpg" alt="">
-          <p>Trying to create an 80s style of glows.</p>
-        </a>
-      </li>
-      <li>
-        <a href="{{ app.request.getbaseurl }}/web/assets/img/numbers-09.jpg">
-          <img src="{{ app.request.getbaseurl }}/web/assets/img/numbers-09.jpg" alt="">
-          <p>Drips created using photoshop brushes.</p>
-        </a>
-      </li>
-      <li>
-        <a href="{{ app.request.getbaseurl }}/web/assets/img/numbers-12.jpg">
-          <img src="{{ app.request.getbaseurl }}/web/assets/img/numbers-12.jpg" alt="">
-          <p>Creating shapes using repetition.</p>
-        </a>
-      </li>
-    
-    
+      </li>        
+        
+        
+        
+    {% endfor %}
     </ul>
     
     

@@ -1,0 +1,27 @@
+/******************
+CONTACT
+******************/
+
+.contact-info{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+    li.phone a{
+        background-image: url(../img/phone.png);
+    }
+    li.mail a{
+        background-image: url(../img/mail.png);
+    }
+    li.twitter a{
+        background-image: url(../img/twitter.png);
+    }
+    a {
+        display: block;
+        min-height: 20px;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        padding: 0 0 0 30px;
+        margin: 0 0 10px;
+    }
+}

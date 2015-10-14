@@ -462,12 +462,25 @@ HEADER STYLING
 
 header {
   background: #6ab47b;
-  border-color: #599a68; }
+  border-color: #599a68;
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%; }
 
 nav {
   text-align: center;
   padding: 10px 0;
   margin: 20px 0 0; }
+  nav ul {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0; }
+  nav li {
+    display: inline-block; }
+  nav a {
+    font-weight: 800;
+    padding: 15px 10px; }
 
 nav {
   background: #599a68; }
@@ -485,7 +498,7 @@ body {
 h1 {
   font-family: 'Exo', sans-serif;
   font-size: 1.75em;
-  font-weight: normal;
+  font-weight: 700;
   line-height: 0.8em; }
 
 h2 {
@@ -493,18 +506,38 @@ h2 {
   margin: -5px 0 0;
   font-weight: normal; }
 
+h3 {
+  margin: 0 0 1em 0; }
+
 h1, h2 {
   color: #fff; }
 
 /******************
-HOMEPAGE STYLING
+HOMEPAGE/PORTFOLIO STYLING
 ******************/
-.imgList {
-  list-style: none; }
+#gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  #gallery li {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+    background-color: #d9d9d9;
+    color: #6ab47b; }
+
+#gallery li a p {
+  padding: 5%;
+  margin: 0;
+  font-size: 0.75em;
+  color: #999; }
 
 a {
   text-decoration: none;
   color: #6ab47b; }
+
+img {
+  max-width: 100%; }
 
 #wrapper {
   max-width: 940px;
@@ -521,7 +554,44 @@ FOOTER STYLING
 footer {
   font-size: 0.85em;
   text-align: center;
+  clear: both;
   padding-top: 50px;
   color: #999; }
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px; }
+
+/******************
+ABOUT
+******************/
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%; }
+
+/******************
+CONTACT
+******************/
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em; }
+  .contact-info li.phone a {
+    background-image: url(../img/phone.png); }
+  .contact-info li.mail a {
+    background-image: url(../img/mail.png); }
+  .contact-info li.twitter a {
+    background-image: url(../img/twitter.png); }
+  .contact-info a {
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px; }
 
 /*# sourceMappingURL=main.css.map */

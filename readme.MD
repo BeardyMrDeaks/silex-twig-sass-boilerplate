@@ -1,13 +1,14 @@
+#Sam Deacon - potfolio website based on:
 # SILEX BOILERPLATE - cloud9
 
-### Basic websites built with the silex php microframework, using sass and 3rd party composer packages - such as twig templating
+### Basic websites built with the silex php microframework, using sass and 3rd party composer packages, and symfony dependancies such as twig templating, and UrlGeneratorServiceProvider.
 
 *Work in progress*
 
 ##TO use
 1. fork/download from github
 2. (assuming you have it installed) run composer update
-3. **SASS (example setup):**
+3. **SASS (easy setup, if you have a gulp workflow ignore this):**
 >   $ gem install sass
 >   $ cd web/assets
 >   $ sass --watch scss/:css/

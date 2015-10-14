@@ -1,0 +1,81 @@
+/******************
+HEADING/FONT STYLING
+******************/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+h1{
+  font-family: 'Exo', sans-serif;
+  font-size: 1.75em;
+  font-weight: 700;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: $h2size;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+h3{
+  margin: 0 0 1em 0;
+}
+
+h1, h2 {
+  color: $whiteprime;
+}
+
+
+
+
+
+
+/******************
+HOMEPAGE/PORTFOLIO STYLING
+******************/
+
+#gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li{
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+    background-color: lighten($greyprime, 25%);
+    color: $customgreen;    
+  }
+}
+
+#gallery li a p {
+  padding: 5%;
+  margin: 0;
+  font-size: 0.75em;
+  color: $greyprime;
+}
+
+  
+
+a{
+  text-decoration: none;
+  color: $customgreen;
+}
+
+img {
+  max-width: 100%;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+
+body{
+  background-color: $whiteprime;
+  color: darken($greyprime, 15%);
+  
+}

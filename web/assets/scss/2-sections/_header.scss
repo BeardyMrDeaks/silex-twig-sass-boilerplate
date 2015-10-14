@@ -1,0 +1,49 @@
+/******************
+HEADER STYLING
+******************/
+
+#logo{
+    text-align: center;
+    margin: 0;
+}
+
+
+// GREEN HEADER
+header{
+    background: $customgreen;
+    border-color: $borderhead;
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+}
+
+nav{
+    text-align:center;
+    padding: 10px 0;
+    margin: 20px 0 0;
+    ul{
+        list-style: none;
+        margin: 0 10px;
+        padding: 0;
+    }
+    li {
+        display: inline-block;
+    }
+    a{
+        font-weight: 800;
+        padding: 15px 10px;
+    }
+}
+
+
+// NAV BACKGROUND ON MOBILE DEVICES
+nav {
+    background: $borderhead;
+    a, nav a:visited{
+        color: #fff;
+    }
+    a.selected, a:hover{
+        color: $navselected;
+    }
+}
